@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        var url = 'http://localhost/PROJS/VIDEO_AULAS/SERIE/03_APIREST2021/public_html/api/user';
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+            })
+            .catch(error => {
+                console.log('ERROR: ' + error.message);
+            })
+    </script>
+</body>
+</html>
